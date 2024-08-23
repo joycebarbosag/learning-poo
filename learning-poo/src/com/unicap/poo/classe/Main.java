@@ -86,5 +86,20 @@ public class Main {
 
         System.out.printf("%s, %s, %.2f%n%s, %s, %.2f%n%s, %s, %.2f%n", rs1.nomeHospede, rs1.tipoQuarto, rs1.noites,
                 rs2.nomeHospede, rs2.tipoQuarto, rs2.noites, rs3.nomeHospede, rs3.tipoQuarto, rs3.noites);
+
+        Carro c1 = new Carro("Volkswagen","Gol",2000);
+        c1.ligarCarro();
+        c1.desligarCarro();
+        c1.buzinar();
+        c1.acelerar();
+        c1.frear();
+
+
+        RegistroVeiculos r1 = new RegistroVeiculos();
+        r1.placa = "AHBG19287";
+        r1.marca = "KIA";
+        r1.ano = 2023;
+
+        System.out.printf("%s. %s, %d", r1.placa, r1.marca, r1.ano);
     }
 }
